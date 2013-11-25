@@ -1,0 +1,32 @@
+Front\YxBundle\Entity\Ratings:
+    type: entity
+    table: ratings
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        userId:
+            type: smallint
+            nullable: false
+            column: user_id
+        jokeId:
+            type: smallint
+            nullable: false
+            column: joke_id
+        jokeType:
+            type: string
+            length: 1
+            fixed: true
+            nullable: false
+            column: joke_type
+        userRating:
+            type: string
+            length: 1
+            fixed: true
+            nullable: false
+            column: user_rating
+    lifecycleCallbacks: {  }

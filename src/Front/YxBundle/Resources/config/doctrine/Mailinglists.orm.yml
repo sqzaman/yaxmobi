@@ -1,0 +1,23 @@
+Front\YxBundle\Entity\Mailinglists:
+    type: entity
+    table: mailinglists
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        email:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+        date:
+            type: date
+            nullable: false
+        status:
+            type: boolean
+            nullable: false
+    lifecycleCallbacks: {  }

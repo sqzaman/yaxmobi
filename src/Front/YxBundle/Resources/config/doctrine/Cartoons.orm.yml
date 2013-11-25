@@ -1,0 +1,37 @@
+Front\YxBundle\Entity\Cartoons:
+    type: entity
+    table: cartoons
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        title:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        description:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        created:
+            type: datetime
+            nullable: true
+        modified:
+            type: datetime
+            nullable: true
+        image:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+        view:
+            type: integer
+            unsigned: false
+            nullable: false
+    lifecycleCallbacks: {  }

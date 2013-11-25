@@ -1,0 +1,23 @@
+Front\YxBundle\Entity\Singers:
+    type: entity
+    table: singers
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        sname:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        created:
+            type: datetime
+            nullable: true
+        modified:
+            type: datetime
+            nullable: true
+    lifecycleCallbacks: {  }

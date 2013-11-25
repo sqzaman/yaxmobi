@@ -1,0 +1,30 @@
+Front\YxBundle\Entity\Ringtonecategories:
+    type: entity
+    table: ringtonecategories
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        title:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        date:
+            type: date
+            nullable: false
+        status:
+            type: string
+            length: 1
+            fixed: true
+            nullable: false
+        image:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+    lifecycleCallbacks: {  }

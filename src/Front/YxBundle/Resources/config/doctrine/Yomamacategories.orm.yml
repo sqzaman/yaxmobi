@@ -1,0 +1,28 @@
+Front\YxBundle\Entity\Yomamacategories:
+    type: entity
+    table: yomamacategories
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        catname:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        image:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+        created:
+            type: datetime
+            nullable: false
+        modified:
+            type: datetime
+            nullable: false
+    lifecycleCallbacks: {  }

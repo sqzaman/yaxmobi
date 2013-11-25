@@ -1,0 +1,33 @@
+Front\YxBundle\Entity\Sending:
+    type: entity
+    table: sending
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        type:
+            type: string
+            length: 10
+            fixed: false
+            nullable: false
+        date:
+            type: datetime
+            nullable: false
+        idSong:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_song
+        idUser:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: id_user
+        answer:
+            type: text
+            nullable: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,25 @@
+Front\YxBundle\Entity\Giftsert:
+    type: entity
+    table: giftsert
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        code:
+            type: text
+            nullable: false
+        price:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        status:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,33 @@
+Front\YxBundle\Entity\Feedbacks:
+    type: entity
+    table: feedbacks
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        userId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: user_id
+        subject:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        message:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        created:
+            type: datetime
+            nullable: false
+        modified:
+            type: datetime
+            nullable: false
+    lifecycleCallbacks: {  }

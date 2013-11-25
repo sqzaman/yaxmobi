@@ -1,0 +1,38 @@
+Front\YxBundle\Entity\Orderdetails:
+    type: entity
+    table: orderdetails
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        orderId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: order_id
+        songId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: song_id
+        unitprice:
+            type: float
+            nullable: false
+        quantity:
+            type: integer
+            unsigned: false
+            nullable: false
+        discount:
+            type: float
+            nullable: false
+        created:
+            type: datetime
+            nullable: true
+        modified:
+            type: datetime
+            nullable: true
+    lifecycleCallbacks: {  }

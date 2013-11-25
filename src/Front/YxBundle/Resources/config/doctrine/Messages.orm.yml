@@ -1,0 +1,21 @@
+Front\YxBundle\Entity\Messages:
+    type: entity
+    table: messages
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        target:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+        createdAt:
+            type: datetime
+            nullable: true
+            column: created_at
+    lifecycleCallbacks: {  }

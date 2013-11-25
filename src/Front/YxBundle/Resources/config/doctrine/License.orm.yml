@@ -1,0 +1,34 @@
+Front\YxBundle\Entity\License:
+    type: entity
+    table: license
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        iduser:
+            type: integer
+            unsigned: false
+            nullable: false
+        idfile:
+            type: integer
+            unsigned: false
+            nullable: false
+        text:
+            type: text
+            nullable: false
+        qwery:
+            type: text
+            nullable: false
+        status:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        license:
+            type: text
+            nullable: false
+    lifecycleCallbacks: {  }

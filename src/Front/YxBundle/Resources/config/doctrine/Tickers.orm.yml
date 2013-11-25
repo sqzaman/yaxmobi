@@ -1,0 +1,19 @@
+Front\YxBundle\Entity\Tickers:
+    type: entity
+    table: tickers
+    fields:
+        id:
+            id: true
+            type: smallint
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        ticker:
+            type: text
+            nullable: false
+        status:
+            type: string
+            length: 1
+            fixed: true
+            nullable: false
+    lifecycleCallbacks: {  }

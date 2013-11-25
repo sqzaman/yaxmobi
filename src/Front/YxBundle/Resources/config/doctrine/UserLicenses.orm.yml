@@ -1,0 +1,31 @@
+Front\YxBundle\Entity\UserLicenses:
+    type: entity
+    table: user_licenses
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: true
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        userId:
+            type: integer
+            unsigned: true
+            nullable: false
+            column: user_id
+        issued:
+            type: boolean
+            nullable: false
+        songId:
+            type: integer
+            unsigned: true
+            nullable: false
+            column: song_id
+        licMd5:
+            type: string
+            length: 40
+            fixed: false
+            nullable: false
+            column: lic_md5
+    lifecycleCallbacks: {  }

@@ -1,0 +1,27 @@
+Front\YxBundle\Entity\StpLogs:
+    type: entity
+    table: stp_logs
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: true
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        api:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        result:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        data:
+            type: string
+            length: 15
+            fixed: false
+            nullable: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,67 @@
+Front\YxBundle\Entity\Yomama:
+    type: entity
+    table: yomama
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        title:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        description:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        status:
+            type: boolean
+            nullable: false
+        year:
+            type: integer
+            nullable: false
+        duration:
+            type: string
+            length: 11
+            fixed: false
+            nullable: false
+        rate:
+            type: float
+            nullable: false
+        type:
+            type: string
+            length: 20
+            fixed: false
+            nullable: false
+        paid:
+            type: string
+            length: null
+            fixed: false
+            nullable: false
+        myxerTag:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+            column: myxer_tag
+        tag:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        category:
+            type: integer
+            unsigned: false
+            nullable: false
+        yomamaFile:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: yomama_file
+    lifecycleCallbacks: {  }

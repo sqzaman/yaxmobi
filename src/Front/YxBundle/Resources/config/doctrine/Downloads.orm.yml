@@ -1,0 +1,30 @@
+Front\YxBundle\Entity\Downloads:
+    type: entity
+    table: downloads
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: true
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        user:
+            type: string
+            length: 10
+            fixed: false
+            nullable: false
+        phone:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+        carrier:
+            type: integer
+            unsigned: false
+            nullable: false
+        song:
+            type: integer
+            unsigned: false
+            nullable: true
+    lifecycleCallbacks: {  }

@@ -1,0 +1,48 @@
+Front\YxBundle\Entity\Cartitems:
+    type: entity
+    table: cartitems
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: true
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        songId:
+            type: integer
+            unsigned: true
+            nullable: false
+            column: song_id
+        userId:
+            type: integer
+            unsigned: true
+            nullable: false
+            column: user_id
+        created:
+            type: datetime
+            nullable: false
+        modified:
+            type: datetime
+            nullable: false
+        status:
+            type: string
+            length: 1
+            fixed: true
+            nullable: false
+        statuspc:
+            type: string
+            length: 1
+            fixed: false
+            nullable: false
+        type:
+            type: string
+            length: 10
+            fixed: false
+            nullable: false
+        typeUpl:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: type_upl
+    lifecycleCallbacks: {  }

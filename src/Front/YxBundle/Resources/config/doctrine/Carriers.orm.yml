@@ -1,0 +1,17 @@
+Front\YxBundle\Entity\Carriers:
+    type: entity
+    table: carriers
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: true
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        carriername:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+    lifecycleCallbacks: {  }

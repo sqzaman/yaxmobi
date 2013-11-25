@@ -1,0 +1,36 @@
+Front\YxBundle\Entity\Albums:
+    type: entity
+    table: albums
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        aname:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        image:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        description:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        price:
+            type: float
+            nullable: false
+        created:
+            type: datetime
+            nullable: true
+        modified:
+            type: datetime
+            nullable: true
+    lifecycleCallbacks: {  }

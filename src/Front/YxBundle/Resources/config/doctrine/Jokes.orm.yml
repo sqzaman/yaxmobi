@@ -1,0 +1,36 @@
+Front\YxBundle\Entity\Jokes:
+    type: entity
+    table: jokes
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        userId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: user_id
+        title:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        jokecategoryId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: jokecategory_id
+        description:
+            type: text
+            nullable: false
+        created:
+            type: datetime
+            nullable: true
+        modified:
+            type: datetime
+            nullable: true
+    lifecycleCallbacks: {  }

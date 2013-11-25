@@ -1,0 +1,119 @@
+Front\YxBundle\Entity\Songs:
+    type: entity
+    table: songs
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        composition:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        singerId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: singer_id
+        albumId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: album_id
+        genreId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: genre_id
+        year:
+            type: integer
+            nullable: false
+        rate:
+            type: float
+            nullable: false
+        grade:
+            type: integer
+            unsigned: false
+            nullable: false
+        path:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        paid:
+            type: string
+            length: null
+            fixed: false
+            nullable: false
+        myxerTag:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+            column: myxer_tag            
+        created:
+            type: datetime
+            nullable: true
+        modified:
+            type: datetime
+            nullable: true
+        duration:
+            type: string
+            length: 11
+            fixed: false
+            nullable: false
+        type:
+            type: string
+            length: 20
+            fixed: false
+            nullable: false
+        sampleFile:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: sample_file
+        ratepc:
+            type: float
+            nullable: false
+        drm:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        statPc:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: stat_pc
+        statPhone:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: stat_phone
+        orFile:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: or_file
+        sampleFileBefore:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+            column: sample_file_before
+        tag:
+            type: string
+            length: 255
+            fixed: false
+            nullable: false
+        view:
+            type: integer
+            unsigned: false
+            nullable: false
+    lifecycleCallbacks: {  }

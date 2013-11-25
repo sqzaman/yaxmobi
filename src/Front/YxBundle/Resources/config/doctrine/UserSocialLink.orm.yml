@@ -1,0 +1,23 @@
+Front\YxBundle\Entity\UserSocialLink:
+    type: entity
+    table: user_social_link
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: true
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        userId:
+            type: integer
+            unsigned: true
+            nullable: false
+            column: user_id
+        userToken:
+            type: string
+            length: 36
+            fixed: true
+            nullable: false
+            column: user_token
+    lifecycleCallbacks: {  }

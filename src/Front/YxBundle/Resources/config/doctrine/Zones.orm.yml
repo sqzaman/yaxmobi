@@ -1,0 +1,26 @@
+Front\YxBundle\Entity\Zones:
+    type: entity
+    table: zones
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        zonecountryid:
+            type: integer
+            unsigned: false
+            nullable: false
+        zonecode:
+            type: string
+            length: 32
+            fixed: false
+            nullable: false
+        zonename:
+            type: string
+            length: 32
+            fixed: false
+            nullable: false
+    lifecycleCallbacks: {  }

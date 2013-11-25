@@ -1,0 +1,23 @@
+Front\YxBundle\Entity\Countries:
+    type: entity
+    table: countries
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: true
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        countryname:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+        created:
+            type: datetime
+            nullable: true
+        modified:
+            type: datetime
+            nullable: true
+    lifecycleCallbacks: {  }

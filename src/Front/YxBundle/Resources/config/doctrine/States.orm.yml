@@ -1,0 +1,28 @@
+Front\YxBundle\Entity\States:
+    type: entity
+    table: states
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: true
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        statename:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+        created:
+            type: datetime
+            nullable: true
+        modified:
+            type: datetime
+            nullable: true
+        countriesId:
+            type: integer
+            unsigned: true
+            nullable: false
+            column: countries_id
+    lifecycleCallbacks: {  }

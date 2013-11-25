@@ -1,0 +1,58 @@
+Front\YxBundle\Entity\Subscriptions:
+    type: entity
+    table: subscriptions
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        name:
+            type: string
+            length: 1000
+            fixed: false
+            nullable: false
+        countJoke:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: count_joke
+        countRing:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: count_ring
+        price:
+            type: float
+            nullable: true
+        perJoke:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: per_joke
+        perRing:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: per_ring
+        deliveryMail:
+            type: string
+            length: 2
+            fixed: false
+            nullable: true
+            column: delivery_mail
+        deliveryPhone:
+            type: string
+            length: 2
+            fixed: false
+            nullable: true
+            column: delivery_phone
+        deliveryManual:
+            type: string
+            length: 2
+            fixed: false
+            nullable: true
+            column: delivery_manual
+    lifecycleCallbacks: {  }

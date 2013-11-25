@@ -1,0 +1,27 @@
+Front\YxBundle\Entity\Playlists:
+    type: entity
+    table: playlists
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        userId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: user_id
+        ringtoneId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: ringtone_id
+        songId:
+            type: integer
+            unsigned: false
+            nullable: false
+            column: song_id
+    lifecycleCallbacks: {  }

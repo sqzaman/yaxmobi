@@ -1,0 +1,31 @@
+Front\YxBundle\Entity\Plans:
+    type: entity
+    table: plans
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        planname:
+            type: string
+            length: 150
+            fixed: false
+            nullable: false
+        plancost:
+            type: float
+            nullable: false
+        status:
+            type: string
+            length: null
+            fixed: false
+            nullable: false
+        created:
+            type: datetime
+            nullable: false
+        modified:
+            type: datetime
+            nullable: false
+    lifecycleCallbacks: {  }

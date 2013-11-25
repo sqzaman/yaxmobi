@@ -1,0 +1,18 @@
+Front\YxBundle\Entity\Userbalances:
+    type: entity
+    table: userbalances
+    fields:
+        id:
+            id: true
+            type: smallint
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        userId:
+            type: smallint
+            nullable: false
+            column: user_id
+        amount:
+            type: float
+            nullable: false
+    lifecycleCallbacks: {  }

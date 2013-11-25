@@ -1,0 +1,95 @@
+tab_ringtone:
+    pattern:  /tabs/ringtone/
+    defaults: { _controller: YxBundle:Tabs:ringtone }
+    
+tab_home:
+    pattern:  /tabs/index/
+    defaults: { _controller: YxBundle:Tabs:index }
+    
+tab_video:
+    pattern:  /tabs/video/
+    defaults: { _controller: YxBundle:Tabs:video }
+    
+home_page:
+    pattern:  /page
+    defaults: { _controller: YxBundle:Page:index, name:neeraj }
+    
+user_login:
+    pattern:  /users/login
+    defaults: { _controller: YxBundle:Users:login }
+    
+admin_login:
+    pattern:  /admin/login
+    defaults: { _controller: YxBundle:Users:admin_login }
+    
+admin_logout:
+    pattern:  /admin/logout
+    defaults: { _controller: YxBundle:Users:admin_logout }
+    
+user_logout:
+    pattern:  /users/logout
+    defaults: { _controller: YxBundle:Users:logout }
+    
+user_song_category:
+    pattern:  /users/song_category
+    defaults: { _controller: YxBundle:Users:song_category }
+    
+user_song_search:
+    pattern:  /users/search/{char}
+    defaults: { _controller: YxBundle:Users:search, char:null }
+    requirements:
+        char: ".+"
+    
+user_index:
+    pattern:  /users/
+    defaults: { _controller: YxBundle:Users:index }
+
+user_profile:
+    pattern:  users/myprofile
+    defaults: { _controller: YxBundle:Users:profile }
+
+listing:
+    pattern:  /listing
+    defaults: { _controller: YxBundle:Albums:listing }
+
+checkingcategory:
+    pattern:  /checkingcategory
+    defaults: { _controller: YxBundle:Albums:checkingcategory }
+    
+user_mybalance:
+    pattern:  users/mybalance
+    defaults: { _controller: YxBundle:Users:mybalance }
+    
+user_register:
+    pattern:  users/register
+    defaults: { _controller: YxBundle:Users:register }
+    
+user_confirm:
+    pattern:  users/confirm/{key}
+    defaults: { _controller: YxBundle:Users:confirm, key:null }
+    requirements:
+        key: ".+"
+        #"[a-zA-Z0-9-_/]+"
+        #
+        
+
+user_congratulations:
+    pattern:  users/congratulations
+    defaults: { _controller: YxBundle:Users:congratulations }
+    
+#user_benef:
+#    pattern:  users/benef
+#    defaults: { _controller: YxBundle:Users:benef }
+
+user_support:
+    pattern:  /users/support
+    defaults: { _controller: YxBundle:Users:support }
+
+user_faq:
+    pattern:  /users/faq
+    defaults: { _controller: YxBundle:Users:faq }
+    
+user_credit:
+    pattern:  /users/credits
+    defaults: { _controller: YxBundle:Users:credits }
+    

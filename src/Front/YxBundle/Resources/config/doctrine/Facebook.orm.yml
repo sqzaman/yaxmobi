@@ -1,0 +1,62 @@
+Front\YxBundle\Entity\Facebook:
+    type: entity
+    table: facebook
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        facebookId:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: facebook_id
+        name:
+            type: string
+            length: 200
+            fixed: false
+            nullable: true
+        email:
+            type: string
+            length: 200
+            fixed: false
+            nullable: true
+        gender:
+            type: string
+            length: 10
+            fixed: false
+            nullable: true
+        birthday:
+            type: date
+            nullable: true
+        location:
+            type: string
+            length: 200
+            fixed: false
+            nullable: true
+        hometown:
+            type: string
+            length: 200
+            fixed: false
+            nullable: true
+        bio:
+            type: text
+            nullable: true
+        relationship:
+            type: string
+            length: 30
+            fixed: false
+            nullable: true
+        timezone:
+            type: string
+            length: 10
+            fixed: false
+            nullable: true
+        accessToken:
+            type: text
+            nullable: true
+            column: access_token
+    lifecycleCallbacks: {  }

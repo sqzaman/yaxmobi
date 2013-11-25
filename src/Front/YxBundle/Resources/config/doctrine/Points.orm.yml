@@ -1,0 +1,16 @@
+Front\YxBundle\Entity\Points:
+    type: entity
+    table: points
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        rate:
+            type: integer
+            unsigned: false
+            nullable: false
+    lifecycleCallbacks: {  }
